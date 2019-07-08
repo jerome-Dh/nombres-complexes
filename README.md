@@ -147,8 +147,6 @@ System.out.println("\n|" + c2 + "| = " + c2.mod());
 
 ### Contributeurs
 
-- [Jerome Dh](https://github.com/jerome-Dh)
-
 
 ## Licence
 
