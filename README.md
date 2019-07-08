@@ -22,7 +22,7 @@ des tests unitaires pour vérifier la viabilité des résultats.
 ### Conditions préalables
 
 Toute personne souhaitant se lancer dans cette aventure doit avoir
-des connaissances en mathématiques discrettes (calculs algébriques), l'algorithmique, 
+des connaissances en mathématiques discrètes (calculs algébriques), l'algorithmique, 
 le langage Java (ou toute autre langage intégrant le paradigme orienté objet)
 et savoir faire des tests unitaires.
 
@@ -46,7 +46,7 @@ path: https://www.java.com/fr/download/help/path.xml
 Dans un répertoire de votre disque (par exemple C:\developpements)
 clonez le projet
 ```
- git clone https://github.com/jerome-Dh/nombres-complexes.git
+ git clone https://github.com/jerome-Dh/nombres-complexes-java.git
 ```
 Après l'installation, vous pouvez modifier le code source à votre guise.
 
@@ -59,7 +59,8 @@ compiler, tester et exécuter rapidement votre programme.
 Une meilleure façon d'écrire les algorithmes efficaces avec la POO
 est de suivre la technique de développement guidée par les test (TDD en anglais)
 
-Un petit tour sur le net pour apprendre plus sur la TDD
+Un petit tour sur [Wikipedia](https://fr.wikipedia.org/wiki/Test_driven_development) 
+pour apprendre plus sur les TDD
 
 Si vous suivez toujours, lancez les tests
 ``` 
@@ -87,7 +88,7 @@ Exemple pour la méthode ``sub``
 * Faites la même opération sur toutes les autres méthodes 
 (n'oubliez pas de considérer le type de retour)
 
-* Maintenant lancez les tests unitaires, normalement tout dévrait 
+* Maintenant lancez les tests unitaires, normalement tout devrait 
 échouer preuve que les méthodes de la classe ``Complexe`` 
 ne donnent pas des résultats vrais.
 
@@ -97,7 +98,7 @@ ne donnent pas des résultats vrais.
 * Une fois terminé, lancez les tests. 
 Si tout est vert alors bravo, vous avez réussi.
 
-[NB] Améléorer votre programme en ajoutant des opérations 
+[NB] Ameléorer votre programme en ajoutant des opérations 
 à la classe ``Complexe``
 
 Quelques exemples:
