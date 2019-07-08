@@ -64,7 +64,7 @@ pour apprendre plus sur les TDD
 
 Si vous suivez toujours, lancez les tests
 ``` 
-	mvn test
+mvn test
 ```
 
 Tous les tests dévraient reussir
@@ -79,10 +79,10 @@ classe ``Complexe`` par des retours vides
 Exemple pour la méthode ``sub``
 
 ```
-	public Complexe sub(Complexe c)
-	{
-		return new Complexe();
-	}
+public Complexe sub(Complexe c)
+{
+	return new Complexe();
+}
 ```
 
 * Faites la même opération sur toutes les autres méthodes 
@@ -117,14 +117,14 @@ L'utilisation fait suite aux tests qui prouvent que toutes les
 opérations donnent des bons résultats
 
 ```
-	Complexe c1 = new Complexe(2, -3),
-			c2 = new Complexe(-1, 2);
+Complexe c1 = new Complexe(2, -3),
+		c2 = new Complexe(-1, 2);
 
-	//Addition
-	System.out.println("\n" + c1 + " - " + c2 + " = " + c1.sub(c2));
+//Addition
+System.out.println("\n" + c1 + " - " + c2 + " = " + c1.sub(c2));
 
-	//Module
-	System.out.println("\n|" + c2 + "| = " + c2.mod());
+//Module
+System.out.println("\n|" + c2 + "| = " + c2.mod());
 ```
 
 ## Construite avec
