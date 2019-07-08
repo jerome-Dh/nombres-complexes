@@ -120,10 +120,10 @@ opérations donnent des bons résultats
 Complexe c1 = new Complexe(2, -3),
 		c2 = new Complexe(-1, 2);
 
-//Addition
+//Addition des deux complexes
 System.out.println("\n" + c1 + " - " + c2 + " = " + c1.sub(c2));
 
-//Module
+//Module du deuxième complexe
 System.out.println("\n|" + c2 + "| = " + c2.mod());
 ```
 
@@ -147,6 +147,7 @@ System.out.println("\n|" + c2 + "| = " + c2.mod());
 
 ### Contributeurs
 
+Merci de contribuer
 
 ## Licence
 
