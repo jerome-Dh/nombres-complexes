@@ -23,7 +23,7 @@ import java.util.ArrayList;
  *
  * @version 1.0
  *
- * @date 06/07/2019
+ * @since 06/07/2019
  *
  * @author Jerome Dh
  *
@@ -46,6 +46,11 @@ public class Complexe
 
 	/**
 	 * Constructeur par défaut
+	 * <p>
+	 * 	Ce constructeur permet de créer un nombre
+	 * 	complexe avec les valeurs nulles: 
+	 *	<b>Il s'agit d'un complexe nul</b>
+	 * </p>
 	 */
 	public Complexe()
 	{
@@ -54,10 +59,16 @@ public class Complexe
 	}
 	
 	/**
-	 * Constructeur avec paramètres
+	 * Constructeur avec paramètres:
+	 * <p>
+	 * 	Ce contructeur crée un nombre complexe avec 
+	 * 	une partie réelle et une partie imaginaire
+	 *	L'une des deux partie peut être nulle ou 
+	 * 	signé
+	 * </p>
 	 *
-	 * @param double re - Partie réel
-	 * @param double im - Partie imaginaire
+	 * @param re Partie réel
+	 * @param im Partie imaginaire
 	 */
 	public Complexe(double re, double im)
 	{
@@ -70,9 +81,9 @@ public class Complexe
 	//
 
 	/**
-	 * Addition
+	 * Addition avec un autre nombre complexe
 	 *
-	 * @param Complexe c - Un nombre complexe
+	 * @param c Un nombre complexe
 	 * 
 	 * @return Complexe
 	 */
@@ -85,9 +96,9 @@ public class Complexe
 	}
 
 	/**
-	 * Soustration
+	 * Soustration avec un autre nombre complexe
 	 *
-	 * @param Complexe c - Un nombre complexe
+	 * @param c Un nombre complexe
 	 * 
 	 * @return Complexe
 	 */
@@ -100,9 +111,9 @@ public class Complexe
 	}
 
 	/**
-	 * Multiplication
+	 * Multiplication avec un autre nombre complexe
 	 *
-	 * @param Complexe c - Un nombre complexe
+	 * @param c Un nombre complexe
 	 * 
 	 * @return Complexe
 	 */
@@ -119,9 +130,9 @@ public class Complexe
 	}
 
 	/**
-	 * Division
+	 * Division avec un autre nombre complexe
 	 *
-	 * @param Complexe c - Un nombre complexe
+	 * @param c Un nombre complexe
 	 * 
 	 * @return Complexe
 	 */
@@ -143,6 +154,11 @@ public class Complexe
 
 	/**
 	 * Argument du nombre complexe
+	 *
+	 * <b>
+	 *	Dans le cas présent la valeur de l'argument 
+	 * 	rétournée est en radian
+	 * </b>
 	 * 
 	 * @return double
 	 */
@@ -177,11 +193,12 @@ public class Complexe
 	/**
 	 * Racine n-ième du  nombre complexe
 	 *
-	 * @param int n - Le n-ième terme de la racine
+	 * @param n Le n-ième terme de la racine
 	 *
-	 * @throws ComplexeException
+	 * @throws ComplexeException : Un nombre négatif pour
+	 * n lévera une exception
 	 * 
-	 * @return List<Complexe>
+	 * @return List
 	 */
 	public List<Complexe> rac(int n) throws ComplexeException
 	{
@@ -211,11 +228,21 @@ public class Complexe
 	//=============== Getters =================
 	//
 
+	/**
+	 * Retourne la partie réelle du nombre complexe
+	 * 
+	 * @return double
+	 */
 	public double getRe()
 	{
 		return this.re;
 	}
 
+	/**
+	 * Retourne la partie imaginaire du nombre complexe
+	 * 
+	 * @return double
+	 */
 	public double getIm()
 	{
 		return this.im;
@@ -225,11 +252,21 @@ public class Complexe
 	//================ Setters ================
 	//
 
+	/**
+	 * Modifie la partie réelle du nombre complexe
+	 * 
+	 * @param re Un réel
+	 */
 	public void setRe(double re)
 	{
 		this.re = re;
 	}
 
+	/**
+	 * Modifie la partie imaginaire du nombre complexe
+	 * 
+	 * @param im Un réel
+	 */
 	public void setIm(double im)
 	{
 		this.im = im;
@@ -241,7 +278,13 @@ public class Complexe
 	/**
 	 * Comparaison avec un autre nombre complexe
 	 * 
-	 * @param Complexe c
+	 * <p>
+	 *	Les deux nombres complexes sont comparés suivant
+	 * 	les valeurs algébriques de la partie réelle et la 
+	 * 	partie imaginaire
+	 * </p>
+	 * 
+	 * @param c Un autre nombre complexe
 	 * 
 	 * @return boolean
 	 */
@@ -254,6 +297,15 @@ public class Complexe
 
 	/**
 	 * Répresentation textuelle du nombre complexe
+	 *
+	 * <p>
+	 *	Cette répresentation utilise la notation algébrique
+	 * 	pour formater le nombre complexe 
+	 * </p>
+	 * <b>
+	 * 	Notez que le symbole <i>i</i> situé après la partie
+	 * 	imaginaire ne sert qu'à la distinguer de la partie réelle
+	 * </b>
 	 * 
 	 * @return String
 	 */
@@ -272,9 +324,7 @@ public class Complexe
 		z = (this.re != 0 && this.im != 0) ? "(" + z + ")" : z;
 
 		return z;
-		
+
 	}
-	
-	
 	
 }
