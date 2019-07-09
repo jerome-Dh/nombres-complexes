@@ -127,6 +127,17 @@ System.out.println("\n" + c1 + " - " + c2 + " = " + c1.sub(c2));
 System.out.println("\n|" + c2 + "| = " + c2.mod());
 ```
 
+A ce stade tout semble bien fonctionner, utilisez la commande
+suivante pour générer une documentation style Javadoc 
+
+```
+javadoc -encoding utf8 -d site src\main\java\projets\jeromedh\cm\complexe\*.java
+```
+
+et parcourer le dossier ``site`` où vous verrez votre beau
+site avec la documentation de votre projet Complexe.
+ 
+
 ## Construite avec
 
 - Notepad++
