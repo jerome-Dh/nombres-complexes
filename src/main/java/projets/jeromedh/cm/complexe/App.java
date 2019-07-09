@@ -3,14 +3,23 @@ package projets.jeromedh.cm.complexe;
 /**
  * Quelques exécutions sur les nombres complexes
  *
+ * <p>
+ * 	Cette classe utilise la classe Complexe pour opérer 
+ * 	sur les nombres complexes
+ * </p>
+ *
  * @version 1.0
  *
- * @date 06/07/2019
+ * @since 06/07/2019
  *
  * @author Jerome Dh
  */
 public class App 
 {
+	/**
+	 * @param args Argument de la ligne de commande
+	 *
+	 */
     public static void main( String[] args )
     {
         System.out.println( "Bienvenue dans le programme complexe" );
