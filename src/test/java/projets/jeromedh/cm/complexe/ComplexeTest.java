@@ -20,7 +20,7 @@ import org.junit.Test;
  *
  * @version 1.0
  *
- * @date 06/07/2019
+ * @since 06/07/2019
  *
  * @author Jerome Dh
  *
@@ -44,7 +44,6 @@ public class ComplexeTest
 	/**
 	 * Créer deux nombres complexes avant chaque test
 	 *
-	 * @var Complexe 
 	 */	
 	@Before
 	public void construireComplexe()
