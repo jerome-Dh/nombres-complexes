@@ -34,7 +34,9 @@ echo.
 echo En cours de generation..
 echo.
 
-mvn site
+if exist site rmdir /S /Q site
+
+javadoc -encoding utf8 -d site src\main\java\projets\jeromedh\cm\complexe\*.java
 
 echo.
 
